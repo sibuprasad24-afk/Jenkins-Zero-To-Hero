@@ -131,8 +131,5 @@ pipeline {
             echo 'CI pipeline failed. Check console output.'
         }
 
-        always {
-            cleanWs()
-        }
     }
 }
