@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: sibu2403/spring-boot-app:3
+        image: sibu2403/spring-boot-app:4
         ports:
         - containerPort: 8080
         resources:
