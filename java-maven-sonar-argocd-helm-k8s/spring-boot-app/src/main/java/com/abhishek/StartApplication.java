@@ -12,13 +12,12 @@ public class StartApplication {
 
     @GetMapping("/")
     public String index(final Model model) {
-        model.addAttribute("title", "I have successfuly built a sprint boot application using Maven");
-        model.addAttribute("msg", "This application is deployed on to Kubernetes using Argo CD");
+        model.addAttribute("title", "Automated CI/CD Pipeline - Version 2.0");
+        model.addAttribute("msg", "Successfully deployed on AWS EC2 Kubernetes using Jenkins, Maven, SonarQube, Docker and Argo CD.");
         return "index";
     }
 
     public static void main(String[] args) {
         SpringApplication.run(StartApplication.class, args);
     }
-
 }
